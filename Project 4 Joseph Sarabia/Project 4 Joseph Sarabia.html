@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>CAP 5725 Joseph Sarabia</title>
+		<script type="text/javascript" src="subdivide.js"></script>
+		<script type="text/javascript" src="Project4.js"></script>
+		<script type="text/javascript" src="renderable.js"></script>
+		<script type="text/javascript" src="radiosity.js"></script>
+		<script type="text/javascript" src="camera.js"></script>
+		<script type="text/javascript" src="radCam.js"></script>
+		<script type="text/javascript" src="cuon-matrix.js"></script>
+		<script type="text/javascript" src="cuon-utils.js"></script>
+		<script type="text/javascript" src="webgl-debug.js"></script>
+		<script type="text/javascript" src="webgl-utils.js"></script>
+		
+
+		
+
+	</head>
+
+	<body onLoad="mainFunction()">
+		<div id="container" style = "width:1400px">
+			<div id="title" style ="background-color:#FFFFFF;height:75px;width:1300px;text-align:center;">
+				<h1>Joseph Sarabia Project 4</h1>
+			</div>
+			<div id="window" style ="background-color:#FFFFFF;height:800px;width:850px;float:left;">
+				<canvas id="myCanvas" width="512px" height="512px" style="border:5px solid #000000; background: blue"></canvas><br>
+			</div>
+			
+			<div id="options" style="background-color:#FFFFFF;height:700px;width:515px;float:left;">
+				<br><br><br><br><br><br><br>
+				<textarea id="messageArea" rows="10" cols="49"></textarea><br>
+				<button type="button" id="messageClear">clear message</button>
+				<!--  <input type="checkbox" name="spotlight" onclick="toggleSpotLight(this);">SpotLight<br><br>
+				Spot Angle: <input type="range" name="angleSlider" min="1" max="10" step="1" value="1"  onchange="angleSlider(this.value);">-->
+				
+				
+				Exposure: <input type="range" name="exposureSlider" min="1" max="15" step="1" value="5"  onchange="exposureSlider(this.value);">
+
+				<p id="output"/>
+				Key Mappings:<br>
+				Truck Left: A 		Truck Right: D<br>
+				Pan Left: J 		Pan Right: L<br>
+				Dolly Forward: W	Dolly Backward: S<br>
+				Tilt Up: I		Tilt Down: K<br>
+				Zoom In: Q		Zoom Out: E<br>
+				Pedestal Up: R		Pedestal Down: F<br>
+				 
+			</div>
+		</div>
+	</body>
+</html>
